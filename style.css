@@ -372,7 +372,7 @@ content {
 	background-color: #4A0F73;
 	box-sizing: border-box;
 	border: 1px #EF5B5B solid;
-	height: 36px;
+	min-height: 36px;
 }
 
 svg 
