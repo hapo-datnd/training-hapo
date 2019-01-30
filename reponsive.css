@@ -1,0 +1,386 @@
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+
+	.content {
+		padding: 30px 90px;
+	}
+
+	.right-header {
+		padding: 0px 90px 45px 90px;
+	}
+
+	h1, h2 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.bottom-left-header {
+		margin-top: 48px;
+	}
+
+}	
+
+@media only screen and (min-width:545px) and (max-width: 768px) {
+
+	.content {
+		padding: 35px 15px;
+	}
+
+	.right-header {
+		padding: 45px 35px 45px 35px;
+	}
+
+	h1, h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.bottom-left-header {
+		margin-top: 60px;
+	}
+
+	.left-header
+	.before:after {
+		width: 124px;
+	}
+
+	.right-header 
+	.language {
+		padding: 0px;
+	}
+
+	.circle-skill {
+	width: 50%;
+	}
+
+	.professional
+	.graphic-1 {
+		display: none;
+	}
+
+	.professional
+	.graphic-0,
+	.graphic-2 {
+		display: flex;
+	}
+
+	.skill-1-p {
+		text-align: center;
+	}
+
+	.professional
+	button {
+		width: 108px;
+		height: 36px;
+	}
+
+	.personal-skill {
+		padding: 0px;
+	}
+
+	.skill-1-p-repon {
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+
+	.personal-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}	
+
+@media only screen and (max-width: 545px) {
+	header {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	h1, h2 {
+		font-size: 16px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	.left-header 
+	,.right-header 
+	,.professional 
+	,.personal
+	,.left-content-3
+	,.right-content-3{
+		width: 100%;
+	}
+
+	.content
+	,.right-header {
+		padding: 35px 15px;
+	}
+
+	.left-header
+	img {
+		width: 100%;
+		height: 175px;
+	}
+
+	.title-header {
+		margin-top: 39px;
+	}
+
+	.left-header
+	.language {
+		display: flex;
+		margin-top: -170px;
+	}
+
+	.left-header 
+	.bottom-left-header {
+		width: 100%;
+		height: 35px;
+	}
+
+	.left-header
+	.bottom-left-header-1 {
+		width: 35px;
+		height: 35px;
+	}
+
+	.left-header 
+	.bottom-left-header-1
+	i {
+		margin-top: 17px;
+		margin-left: 17px;
+		font-size: 10px;
+	}
+
+	.left-header
+	.before:after {
+		width: 95px;
+    	background: #EF5B5B;
+	}
+
+	.right-header
+	.language {
+		display: none;
+	}
+
+	.right-header 
+	.ava {
+		width: 100px;
+		height: 100px;
+		margin-top: -60px;
+	}
+
+	.right-header 
+	.bottom-ava {
+		margin-top: -80px;
+	}
+
+	.content-1-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content-1
+	.before:after {
+		width: 128px;
+	}
+
+	.content-1
+	.para {
+		margin-top: 10px;
+	}
+
+	.content-1
+	button {
+		margin-left: 0px;
+		margin-top: 15px;
+	}
+
+	.professional {
+		padding-right: 0px;
+	}
+
+	.professional
+	.before:after {
+		width: 128px;
+	}
+
+	.professional
+	.behind:after {
+		width: 40px;
+	}
+
+	.circle-skill {
+	width: 50%;
+	}
+
+	.professional
+	.graphic-1 {
+		display: none;
+	}
+
+	.professional
+	.graphic-0,
+	.graphic-3 {
+		display: flex;
+	}
+
+	.skill-1-p-repon {
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+
+	.skill-button
+	button {
+		max-width: 108px;
+		min-height: 36px;
+	}
+
+	.skill-button-1 {
+		margin: 15px 0px 0px 0px;
+	}
+
+	.personal {
+		padding-top: 35px;
+		padding-left: 0px;
+	}
+
+	.personal
+	.before:after {
+		width: 98px;
+	}
+
+	.personal
+	.behind:after {
+		width: 40px;
+	}
+
+	.personal-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.personal
+	button {
+		margin-left: 0px;
+	}
+
+	.personal-skill {
+		padding: 0px;
+	}
+
+	.left-content-3 {
+		padding: 0px;
+	}
+
+	.right-content-3 {
+		margin-top: 35px;
+		padding: 0px;
+	}
+
+	.main {
+		padding: 0px;
+	}
+
+	.right-content-3
+	.before:after {
+		width: 45px;
+	}
+
+	.right-content-3
+	.behind:after {
+		width: 30px;
+	}
+
+	.content-3-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content-3-button 
+	button {
+		margin-left: 0px;
+	}
+
+	.content-4 
+	.menu {
+		margin-left: 0px;
+	}
+
+	.content-4 
+	.before:after {
+		width: 45px;
+	}
+
+	.content-4 
+	.behind:after {
+		width: 30px;
+	}
+
+	.column-1 ,.column-2 ,.column-3 ,.column-4{
+		width: 50%;
+	}
+
+	.show-box-1 {
+		width: 100%;
+		height: 110px;
+	}
+
+	.show-box-2,
+	.show-box-3 {
+		width: 100%;
+		height: 220px;
+	}
+
+	.footer-top 
+	.before:after {
+		width: 45px;
+	}
+
+	.footer-top
+	.behind:after {
+		width: 30px;
+	}
+
+	.slide {
+		padding: 0px;
+	}
+
+	.slide {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.slide
+	img {
+		margin: 0px;
+	}
+
+	.quote-1,
+	.quote-2 {
+		font-size: 60px;
+	}
+
+	.quote {
+		margin-top: 15px;
+	}
+
+	.quote-1-1 {
+		margin: 0px 0px 0px 42px;
+	}
+}
+
