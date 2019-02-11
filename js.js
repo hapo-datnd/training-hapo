@@ -113,7 +113,7 @@ let myElement4 = `<div class="person-skill">
 						</div>
 					</div>`;
 
-function addButton_2() {
+function addButton2() {
 	let numberPerson_skill = countGraphic("personal-skill","person-skill");
 	let newAdd = addSkill(myElement4,"person-skill","personal-skill",numberPerson_skill-1);
 	// body...
@@ -131,7 +131,7 @@ let myElement5 = `<div class="main-3 flex-row">
 							</div>
 						</div>`;
 
-function addButton_3() {
+function addButton3() {
 	let numberWork_exp = countGraphic("main-2-left","main-3");
 	let newAdd = addSkill(myElement5,"main-3","main-2-left",numberWork_exp-1);
 	// body...
@@ -149,13 +149,13 @@ let myElement6 = `<div class="main-3 flex-row">
 							</div>
 						</div>`;
 
-function addButton_4() {
+function addButton4() {
 	let numberEducation = countGraphic("main-2-right","main-3");
 	let newAdd = addSkill(myElement6,"main-3","main-2-right",numberEducation-1);
 	// body...
 }
 
-function addButton_5() {
+function addButton5() {
 	let numberColumn1 = countGraphic("column-1","show-box");
 	let numberColumn2 = countGraphic("column-2","show-box");
 	let numberColumn3 = countGraphic("column-3","show-box");
@@ -294,7 +294,7 @@ $(document).on('ready', function() {
      		 });
   		});
 
-function addButton_6() {
+function addButton6() {
 
 	$(".slick").slick('unslick');
 
