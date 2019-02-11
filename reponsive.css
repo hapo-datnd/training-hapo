@@ -4,6 +4,11 @@
 		padding: 30px 90px;
 	}
 
+	.left-header {
+		background-size: cover;
+		background-position: center;
+	}
+
 	.right-header {
 		padding: 0px 90px 45px 90px;
 	}
@@ -26,6 +31,11 @@
 
 	.content {
 		padding: 35px 15px;
+	}
+
+	.left-header {
+		background-size: cover;
+		background-position: center;
 	}
 
 	.right-header {
@@ -54,12 +64,17 @@
 		padding: 0px;
 	}
 
+	.personal-info {
+		width: 100%;
+	}
+
 	.circle-skill {
 	width: 50%;
 	}
 
 	.professional
-	.graphic-1 {
+	.graphic-1,
+	.graphic-4 {
 		display: none;
 	}
 
@@ -67,6 +82,11 @@
 	.graphic-0,
 	.graphic-2 {
 		display: flex;
+	}
+
+	.professional 
+	.graphic-0 {
+		flex-direction: column;
 	}
 
 	.skill-1-p {
@@ -83,6 +103,10 @@
 		padding: 0px;
 	}
 
+	.skill {
+		padding: auto;
+	}
+
 	.skill-1-p-repon {
 		text-align: center;
 		text-transform: uppercase;
@@ -94,6 +118,52 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	.show-box-1 {
+		height: 110px;
+	}
+
+	.show-box-2,
+	.show-box-3 {
+		height: 220px;
+	}
+
+	.show-box-1
+	img {
+		width: 87px;
+		height: 83px;
+	}
+
+	.show-box-2
+	img {
+		width: 119px;
+		height: 112px;
+	}
+
+	.show-box-3
+	img {
+		width: 119px;
+		height: 112px;
+	}
+
+	.slide {
+		display: flex!important;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+	}
+
+	.prev {
+		left: 60px;
+		top: 27%;
+	}
+
+	.next {
+		right: 60px;
+		top: 27%;
+	}
+
 }	
 
 @media only screen and (max-width: 545px) {
@@ -124,10 +194,9 @@
 		padding: 35px 15px;
 	}
 
-	.left-header
-	img {
-		width: 100%;
-		height: 175px;
+	.left-header {
+		background-size: cover;
+		background-position: center;
 	}
 
 	.title-header {
@@ -137,7 +206,7 @@
 	.left-header
 	.language {
 		display: flex;
-		margin-top: -170px;
+		margin-top: 0px;
 	}
 
 	.left-header 
@@ -175,18 +244,28 @@
 	.ava {
 		width: 100px;
 		height: 100px;
-		margin-top: -60px;
+		margin-top: -85px;
 	}
 
 	.right-header 
-	.bottom-ava {
-		margin-top: -80px;
+	.ava 
+	i {
+		font-size: 10px;
+	}
+
+	.personal-info {
+		width: 100%;
+	}
+
+	.right-header-button {
+		padding-right: 0px;
 	}
 
 	.content-1-button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-right: 0px;
 	}
 
 	.content-1
@@ -224,7 +303,8 @@
 	}
 
 	.professional
-	.graphic-1 {
+	.graphic-1,
+	.graphic-4 {
 		display: none;
 	}
 
@@ -234,10 +314,9 @@
 		display: flex;
 	}
 
-	.skill-1-p-repon {
-		text-align: center;
-		text-transform: uppercase;
-		margin-top: 10px;
+	.professional 
+	.graphic-0 {
+		flex-direction: column;
 	}
 
 	.skill-button
@@ -333,6 +412,24 @@
 		width: 50%;
 	}
 
+	.show-box-1
+	img {
+		width: 87px;
+		height: 83px;
+	}
+
+	.show-box-2
+	img {
+		width: 119px;
+		height: 112px;
+	}
+
+	.show-box-3
+	img {
+		width: 119px;
+		height: 112px;
+	}
+
 	.show-box-1 {
 		width: 100%;
 		height: 110px;
@@ -359,10 +456,21 @@
 	}
 
 	.slide {
-		display: flex;
+		display: flex!important;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 0px;
+	}
+
+	.prev {
+		left: 60px;
+		top: 25%;
+	}
+
+	.next {
+		right: 64px;
+		top: 25%;
 	}
 
 	.slide
