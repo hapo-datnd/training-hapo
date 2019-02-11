@@ -1,8 +1,34 @@
 
+@font-face {
+	font-family: Poppins-h1;
+	src: url('font/Poppins-Bold.otf');
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('font/Poppins-ExtraLight.otf');
+}
+
+@font-face {
+	font-family: Poppins-language;
+	src: url('font/Poppins-Thin.otf');
+}
+
+@font-face {
+	font-family: Poppins-Regular;
+	src: url('font/Poppins-Regular.otf');
+}
+
+@font-face {
+	font-family: Poppins-Medium;
+	src: url('font/Poppins-Medium.otf');
+}
+
+
 body {
 	width: 100%;
 	max-width: 1440px;
-	font: normal normal 14px/normal 'Poppins';
+	font: normal normal 14px/normal Poppins;
 	color: #FFFFFF;
 	text-align: justify;
 	margin: auto;
@@ -10,24 +36,27 @@ body {
 
 h1 {
 	font-weight: bold;
-	font-size: 43px;
+	font-family: Poppins-h1;
+	font-size: 40px;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 }
 
 h2 {
 	font-weight: bold;
+	font-family: Poppins-h1;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	font-size: 23px;
+	font-size: 25px;
 }
 
 h3 {
+	font-family: Poppins;
 	font-size: 20px;
 }
 
 p {
-	font: normal normal 14px/normal 'Poppins';
+	font: normal normal 14px/normal Poppins;
 	color: #FFFFFF;
 }
 
@@ -61,7 +90,7 @@ i {
 
 .before:after {
 	position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0%;
     height: 2px;
     content: '';
@@ -73,7 +102,7 @@ i {
 
 .behind:after {
 	position: absolute;
-    top: 0;
+    top: -5px;
     right: 0%;
     height: 2px;
     content: '';
@@ -92,6 +121,8 @@ header {
 	width: 50%;
 	box-sizing: border-box;
 	max-height: 600px;
+	background-image: url(image/ava.png);
+	background-size: 100% 100%;
 }
 
 .left-header 
@@ -99,25 +130,27 @@ header {
 	display: none;
 }
 
-.left-header
+/*.left-header
 img {
 	width: 100%;
 	height: 600px;
-}
+}*/
 
 .title-header {
-	margin-top: -176px;
+	margin-top: 424px;
 }
 
 .left-header
 .before:after {
 	width: 236px;
+	bottom: 2px;
     background: #EF5B5B;
 }
 
 .bottom-left-header {
+	height: 60px;
 	width: 100%;
-	margin-top: 22px;
+	margin-top: 26px;
 	box-sizing: border-box;
 	flex-direction: row-reverse;
 }
@@ -136,6 +169,7 @@ i {
 	border-top-left-radius: 100%;
 	box-sizing: border-box;
 }
+
 /*End CSS left-header*/
 /*Begin CSS right-header*/
 .right-header {
@@ -144,18 +178,22 @@ i {
 	width: 50%;
 	background-color: #242581;
 	box-sizing: border-box;
-	padding: 0px 114px 45px 135px;
+	padding: 0px 114px 45px 114px;
 }
 
 .right-header
 .language {
-	padding-top: 42px;
+	padding-top: 21px;
 	box-sizing: border-box;
+}
+
+.language {
+	font-family: Poppins-language;
 }
 
  .language
  .p1 {
- 	margin-left: 5px;
+ 	margin-left: 0px;
  }
 
  .language
@@ -188,22 +226,25 @@ i {
  	overflow: hidden;
  	margin-top: 16px;
  	box-sizing: border-box;
- }
-
- .ava
- img {
- 	width: 150px;
- 	height: 150px;
+ 	background-image: url(image/ava.png);
+ 	background-size: 100% 100%;
+ 	justify-content: flex-end;
  }
 
  .ava 
  .bottom-ava {
  	width: 152px;
- 	height: 33px;
- 	margin-top: -33px;
- 	margin-bottom: 0px;
+ 	height: 20%;
  	background: #393937;
- 	opacity: 0.8;
+ 	opacity: 0.5;
+ 	display: none;
+ }
+
+ .right-header 
+ a:hover
+ .bottom-ava {
+ 	display: flex;
+ 	opacity: 1;
  }
 
  .name {
@@ -213,7 +254,7 @@ i {
 
  .name 
  .p1 {
- 	font-weight: bold;
+ 	font-family: Poppins-Medium;
  	letter-spacing: 0.05cm;
  	text-transform: uppercase;
  	text-align: center;
@@ -225,23 +266,35 @@ i {
  	text-align: center;
  }
 
- .personal-info {
+ .right-header-table {
  	width: 100%;
-	height: 218px;
+ 	box-sizing: border-box;
+ }
+
+ .personal-info {
+ 	width: 96%;
  	border-top: 2px #EF5B5B solid;
- 	padding-top: 17px;
+ 	padding-top: 11px;
+ 	/*height: 218px;*/
+ 	/*margin-right: 25px;*/
  	box-sizing: border-box;
  }
 
  .personal-info
  .tdleft {
  	font-weight: 800;
- 	padding: 10px 0;
+ 	padding-top: 15px;
+ 	width: 100px;
+ 	font-family: Poppins-Medium;
  }
 
  .personal-info
  .tdright {
- 	padding: 10px 0;
+ 	padding-top: 15px;
+ }
+
+ .right-header-button {
+ 	padding-right: 32px;
  }
 
  button
@@ -249,9 +302,14 @@ i {
  	margin-left: 6px;
  }
 
+ button:hover {
+ 	cursor: pointer;
+ 	opacity: 0.8;
+ }
+
  .right-header
  button {
- 	margin-top: 11px;
+ 	margin-top: 25px;
  	min-height: 36px;
  	min-width: 134px;
 	background-color: #242581;
@@ -290,11 +348,13 @@ content {
 
 .content-1-button {
 	justify-content: flex-end;
+	padding-right: 33px;
 }
 
 .content-1 
 .para {
 	margin-top: 30px;
+	padding-bottom: 10px;
 }
 
 .content-1
@@ -316,6 +376,7 @@ content {
 	padding-right: 14px;
 	float: left;
 	box-sizing: border-box;
+	justify-content: center;
 }
 
 .professional
@@ -335,11 +396,25 @@ content {
 	margin-top: 20px;
 }
 
+.skill-2,
+.skill-3 {
+	margin-left: 30px;
+}
+
 .circle-skill {
+	max-width: 171px;
 	width: 33%;
 	padding: 0 33px;
 	box-sizing: border-box;
 	justify-content: flex-start;
+}
+
+.proskill {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .graphic {
@@ -373,6 +448,7 @@ content {
 	box-sizing: border-box;
 	border: 1px #EF5B5B solid;
 	min-height: 36px;
+	min-width: 108px;
 }
 
 svg 
@@ -627,7 +703,7 @@ h4 {
 .left-content-3
  button {
  	min-height: 36px;
- 	min-width: 34.67%;
+ 	min-width: 198px;
 	background-color: #F64C71;
 	box-sizing: border-box;
 	border: 1px #FFFFFF solid;
@@ -665,7 +741,7 @@ h4 {
 .right-content-3
  button {
  	min-height: 36px;
- 	min-width: 26.54%;
+ 	min-width: 151px;
 	background-color: #F64C71;
 	box-sizing: border-box;
 	border: 1px #FFFFFF solid;
@@ -702,7 +778,7 @@ h4 {
 ul
 li {
 	width: auto;
-	font: normal bold 14px/normal Poppins;
+	font: normal bold 14px/normal Poppins-Medium;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -732,8 +808,8 @@ a:hover {
 
 .show-box-1
 img {
-	width: 75%;
-	height: 75%;
+	width: 150px;
+	height: 159px;
 }
 
 .box-1-1 {
@@ -763,14 +839,14 @@ img {
 
 .show-box-2
 img {
-	width: 75%;
-	height: 50%;
+	width: 220px;
+	height: 207px;
 }
 
 .show-box-3
 img {
-	width: 75%;
-	height: 50%;
+	width: 220px;
+	height: 208px;
 }
 
 .box-2-1 {
@@ -784,7 +860,7 @@ img {
 .column-4
  button {
  	min-height: 36px;
- 	max-width: 198px;
+ 	min-width: 139px;
 	background-color: #563D67;
 	box-sizing: border-box;
 	border: 1px #EF5B5B solid;
@@ -816,11 +892,40 @@ footer {
     background: #EF5B5B;
 }
 
+.slide-bottom {
+	width: 100%;
+	position: relative;
+}
+
+.prev {
+	position: absolute;
+	left: 80px;
+	top: 50%;
+	opacity: 0.5;
+}
+
+.next:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.prev:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.next {
+	position: absolute;
+	right: 84px;
+	top: 50%;
+	opacity: 0.5;
+}
+
 .slide {
 	margin: auto;
-	width: 100%;
 	margin-top: 25px;
 	box-sizing: border-box;
+	padding: 0px 122px;
 }
 
 .slide
@@ -892,7 +997,7 @@ span {
 .panigation
  button {
  	min-height: 36px;
- 	max-width: 198px;
+ 	min-width: 169px;
 	background-color: #2F2FA1;
 	box-sizing: border-box;
 	border: 1px #EF5B5B solid;
@@ -904,4 +1009,5 @@ span {
 	padding:14px 0px;
 	box-sizing: border-box;
 }
+
 /*End CSS footer*/

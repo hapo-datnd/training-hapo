@@ -4,17 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Show-CV</title>
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="reponsive.css">
 	<link rel="stylesheet" type="text/css" href="fontawnsome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Poppins|Port+Lligat+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Port+Lligat+Slab" rel="stylesheet">
 </head>
 <body class="flex-column">
 	<header>
 		<section class="left-header flex-column flex-center">
-			<img src="image/ava.png">
+			<!-- <img src="image/ava.png"> -->
 			<div class="language flex-row flex-center">
 				<p class="p1"><a href="#">English</p></a>
 				<p class="p2"><a href="index.html">Japanese</p></a>
@@ -35,46 +37,51 @@
 				<p class="p1"><a href="#">English</p></a>
 				<p class="p2"><a href="index.html">Japanese</p></a>
 			</div>
-			<div class="ava flex-column flex-center">
-				<img src="image/ava.png">
+			<a href="#"><div class="ava flex-column flex-center">
+				<!-- <img src="image/ava.png"> -->
 				<div class="bottom-ava flex-row flex-center">
 					<i class="fas fa-camera"></i>
 				</div>
-			</div>
+			</div></a>
 			<div class="name flex-column flex-center">
 				<p class="p1">bumblebee walker</p>
 				<p class="p2">25/12/1992</p>
 			</div>
-			<table class="personal-info">
-				<tr>
-					<td class="tdleft tdleft-1">Phone:</td>
-					<td class="tdright tdright-1">0974647466</td>
-				</tr>
-				<tr>
-					<td class="tdleft">Email:</td>
-					<td class="tdright">bumblebee@gmail.com</td>
-				</tr>
-				<tr>
-					<td class="tdleft">Facebook:</td>
-					<td class="tdright">bumblebee</td>
-				</tr>
-				<tr>
-					<td class="tdleft">Skype:</td>
-					<td class="tdright">bumblebee</td>
-				</tr>
-				<tr>
-					<td class="tdleft">Chatwork</td>
-					<td class="tdright">bumblebee</td>
-				</tr>
-				<tr>
-					<td class="tdleft">Address</td>
-					<td class="tdright">bumblebee</td>
-				</tr>
+			<div class="right-header-table">
+				<table class="personal-info">
+					<tr>
+						<td class="tdleft tdleft-1">Phone:</td>
+						<td class="tdright tdright-1">0974647466</td>
+					</tr>
+					<tr>
+						<td class="tdleft">Email:</td>
+						<td class="tdright">bumblebee@gmail.com</td>
+					</tr>
+					<tr>
+						<td class="tdleft">Facebook:</td>
+						<td class="tdright">bumblebee</td>
+					</tr>
+					<tr>
+						<td class="tdleft">Skype:</td>
+						<td class="tdright">bumblebee</td>
+					</tr>
+					<tr>
+						<td class="tdleft">Chatwork:</td>
+						<td class="tdright">bumblebee</td>
+					</tr>
+					<tr>
+						<td class="tdleft">Address:</td>
+						<td class="tdright">bumblebee</td>
+					</tr>
 			</table>
-			<button class="flex-row flex-center">
-				<p class="p1">Edit profile</p>
-				<i class="fas fa-pen"></i>
-			</button>
+			</div>
+			<div class="right-header-button flex-center">
+				<button class="flex-row flex-center">
+					<p class="p1">Edit profile</p>
+					<i class="fas fa-pen"></i>
+				</button>	
+			</div>
+			
 		</section>
 	</header>
 
@@ -95,78 +102,90 @@
 				<p class="p1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
 				<div class="skill flex-row">
 					<div class="skill-1 circle-skill flex-column flex-center">
-						<div class="graphic">
-							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-								<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-segment-1" cx="50" cy="50" r="47.5"></circle>
-							  	<text
-  								x="40" y="55">75%</text>
-							</svg>
+						<div class="pro-skill">
+							<div class="graphic">
+								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+									<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-segment-1" cx="50" cy="50" r="47.5"></circle>
+								  	<text
+	  								x="40" y="55">75%</text>
+								</svg>
+							</div>
+							<p class="skill-1-p">html/css</p>
 						</div>
-						<p class="skill-1-p">html/css</p>
-						<div class="graphic">
-							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-								<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-segment-1" cx="50" cy="50" r="47.5"></circle>
-							  	<text
-  								x="40" y="55">75%</text>
-							</svg>
+						<div class="pro-skill">
+							<div class="graphic">
+								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+									<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-segment-1" cx="50" cy="50" r="47.5"></circle>
+								  	<text
+	  								x="40" y="55">75%</text>
+								</svg>
+							</div>
+							<p class="skill-1-p">php</p>
 						</div>
-						<p class="skill-1-p">php</p>
-						<div class="graphic graphic-0">
-							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-								<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-segment-3" cx="50" cy="50" r="47.5"></circle>
-							  	<text
-  								x="40" y="55">50%</text>
-							</svg>
+						<div class="pro-skill graphic-0">
+							<div class="graphic">
+								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+									<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-segment-3" cx="50" cy="50" r="47.5"></circle>
+								  	<text
+	  								x="40" y="55">50%</text>
+								</svg>
+							</div>
+							<p class="skill-1-p">my sql</p>
 						</div>
-						<p class="skill-1-p-repon graphic-0">my sql</p>
 					</div>
 					<div class="skill-2 circle-skill flex-column flex-center">
-						<div class="graphic">
-							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-								<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-segment-2" cx="50" cy="50" r="47.5"></circle>
-							  	<text
-  								x="40" y="55">65%</text>
-							</svg>
+						<div class="pro-skill">
+							<div class="graphic">
+								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+									<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-segment-2" cx="50" cy="50" r="47.5"></circle>
+								  	<text
+	  								x="40" y="55">65%</text>
+								</svg>
+							</div>
+							<p class="skill-1-p">c#.net</p>
 						</div>
-						<p class="skill-1-p">c#.net</p>
-						<div class="graphic">
-							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-								<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-segment-2" cx="50" cy="50" r="47.5"></circle>
-							  	<text
-  								x="40" y="55">65%</text>
-							</svg>
+						<div class="pro-skill">
+							<div class="graphic">
+								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+									<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-segment-2" cx="50" cy="50" r="47.5"></circle>
+								  	<text
+	  								x="40" y="55">65%</text>
+								</svg>
+							</div>
+							<p class="skill-1-p">react native</p>
 						</div>
-						<p class="skill-1-p">react native</p>
 						<div class="skill-button flex-center graphic-2">
-							<button class="flex-row flex-center">
+							<button type="button" onclick="addButton()" class="flex-row flex-center">
 								<p>Add skill</p>
 								<i class="fas fa-plus"></i>
 							</button>
 						</div>
 					</div>
 					<div class="skill-3 circle-skill flex-column flex-center graphic-1">
-						<div class="graphic graphic-1">
-							<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-								<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
-							  	<circle class="donut-segment-3" cx="50" cy="50" r="47.5"></circle>
-							  	<text
-  								x="40" y="55">50%</text>
-							</svg>
-						</div>
-						<p class="skill-1-p graphic-1">my sql</p>
+						<div class="pro-skill graphic-4">
+							<div class="graphic">
+								<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+									<circle class="donut-hole" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-ring" cx="50" cy="50" r="47.5"></circle>
+								  	<circle class="donut-segment-3" cx="50" cy="50" r="47.5"></circle>
+								  	<text
+	  								x="40" y="55">50%</text>
+								</svg>
+							</div>
+							<p class="skill-1-p">my sql</p>
+						</div>	
 						<div class="skill-button flex-center graphic-1">
-							<button class="flex-row flex-center">
+							<button type="button" onclick="addButton()" class="flex-row flex-center">
 								<p>Add skill</p>
 								<i class="fas fa-plus"></i>
 							</button>
@@ -174,7 +193,7 @@
 					</div>
 				</div>
 				<div class="skill-button-1 skill-button flex-center graphic-3">
-					<button class="flex-row flex-center">
+					<button type="button" onclick="addButton()" class="flex-row flex-center">
 						<p>Add skill</p>
 						<i class="fas fa-plus"></i>
 					</button>
@@ -184,29 +203,35 @@
 				<h2><span class="before">personal</span> <span class="behind">skills</span></h2>
 				<p class="p1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
 				<div class="personal-skill flex-column">
-					<h4>team work</h4>
-					<div class="all">
-						<div class="percent percent-1">
-							
+					<div class="person-skill">
+						<h4>team work</h4>
+						<div class="all">
+							<div class="percent percent-1">
+								
+							</div>
+							<p class="percent-text-1">65%</p>
 						</div>
-						<p class="percent-text-1">65%</p>
 					</div>
-					<h4>english</h4>
-					<div class="all">
-						<div class="percent percent-2">
-							
+					<div class="person-skill">
+						<h4>english</h4>
+						<div class="all">
+							<div class="percent percent-2">
+								
+							</div>
+							<p class="percent-text-2">65%</p>
 						</div>
-						<p class="percent-text-2">65%</p>
 					</div>
-					<h4>japanese</h4>
-					<div class="all">
-						<div class="percent percent-3">
-							
+					<div class="person-skill">
+						<h4>japanese</h4>
+						<div class="all">
+							<div class="percent percent-3">
+								
+							</div>
+							<p class="percent-text-3">65%</p>
 						</div>
-						<p class="percent-text-3">65%</p>
 					</div>
 					<div class="personal-button flex-row">
-						<button class="flex-row flex-center">
+						<button type="button" onclick="addButton_2()" class="flex-row flex-center">
 							<p>Add skill</p>
 							<i class="fas fa-plus"></i>
 						</button>
@@ -221,7 +246,7 @@
 				<div class="main">
 					<div class="main-1">
 					</div>
-					<div class="main-2 flex-column">
+					<div class="main-2 main-2-left flex-column">
 						<div class="main-3 main-3-1 flex-row">
 							<img class="img-1" src="icon/Polygon.png">
 							<div class="main-3-center">
@@ -280,7 +305,7 @@
 					</div>
 				</div>
 				<div class="content-3-button flex-row">
-					<button class="flex-row flex-center">
+					<button type="button" onclick="addButton_3()" class="flex-row flex-center">
 						<p>Add work expience</p>
 						<i class="fas fa-plus"></i>
 					</button>
@@ -292,7 +317,7 @@
 				<div class="main">
 					<div class="main-1">
 					</div>
-					<div class="main-2 flex-column">
+					<div class="main-2 main-2-right flex-column">
 						<div class="main-3 main-3-1 flex-row">
 							<img class="img-1" src="icon/Polygon.png">
 							<div class="main-3-center">
@@ -351,7 +376,7 @@
 					</div>
 				</div>
 				<div class="content-3-button flex-row">
-					<button class="flex-row flex-center">
+					<button type="button" onclick="addButton_4()" class="flex-row flex-center">
 						<p>Add education</p>
 						<i class="fas fa-plus"></i>
 					</button>
@@ -371,35 +396,35 @@
 			</div>	
 			<div class="show">
 				<div class="column-1 flex-column">
-					<div class="show-box-1 box-1-1 flex-center flex-column">
+					<div class="show-box show-box-1 box-1-1 flex-center flex-row">
 						<img src="image/project.png">
 					</div>
-					<div class="show-box-1 box-1-2 flex-center flex-column">
+					<div class="show-box show-box-1 box-1-2 flex-center flex-column">
 						<img src="image/project.png">
 					</div>
 				</div>
 				<div class="column-2 flex-column">
-					<div class="show-box-2 box-2-1 flex-center flex-column">
+					<div class="show-box show-box-2 box-2-1 flex-center flex-column">
 						<img src="image/project2.png">
 					</div>
 				</div>
 				<div class="column-3 flex-column">
-					<div class="show-box-1 box-1-4 flex-center flex-column">
+					<div class="show-box show-box-1 box-1-4 flex-center flex-column">
 						<img src="image/project.png">
 					</div>
-					<div class="show-box-3 box-2-2 flex-center flex-column">
+					<div class="show-box show-box-3 box-2-2 flex-center flex-column">
 						<img src="image/project.png">
 					</div>
 				</div>
 				<div class="column-4 flex-column">
-					<div class="show-box-1 box-1-3 flex-center flex-column">
+					<div class="show-box show-box-1 box-1-3 flex-center flex-column">
 						<img src="image/project.png">
 					</div>
-					<div class="show-box-1 box-1-5 flex-center flex-column">
+					<div class="show-box show-box-1 box-1-5 flex-center flex-column">
 						<img src="image/project2.png">
 					</div>
 					<div class="show-box-1 flex-center flex-column">
-						<button class="flex-row flex-center">
+						<button type="button" onclick="addButton_5()" class="flex-row flex-center">
 							<p>Add project</p>
 							<i class="fas fa-plus"></i>
 						</button>
@@ -412,17 +437,41 @@
 	<footer class="flex-column">
 		<div class="footer-top content flex-column">
 			<h2><span class="before">referen</span><span class="behind">ces</span></h2>
-			<div class="slide">
-				<img src="image/avafooter.png">
-				<div class="quote flex-row">
-					<div class="quote-1-1">
-						<span class="quote-1">“</span><span class="p2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
-						<span class="quote-2">”</span>
+			<div class="slide-bottom">
+				<span class="prev"><i class="fas fa-chevron-left"></i></span>
+				<div class="slick">
+					<div class="slide">
+						<img src="image/avafooter.png">
+						<div class="quote flex-row">
+							<div class="quote-1-1">
+								<span class="quote-1">“</span><span class="p2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
+								<span class="quote-2">”</span>
+							</div>
+						</div>
 					</div>
-				</div>
+					<div class="slide">
+						<img src="image/avafooter.png">
+						<div class="quote flex-row">
+							<div class="quote-1-1">
+								<span class="quote-1">“</span><span class="p2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
+								<span class="quote-2">”</span>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="image/avafooter.png">
+						<div class="quote flex-row">
+							<div class="quote-1-1">
+								<span class="quote-1">“</span><span class="p2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</span>
+								<span class="quote-2">”</span>
+							</div>
+						</div>
+					</div>			
+				</div>	
+				<span class="next"><i class="fas fa-chevron-right"></i></span>
 			</div>
 			<div class="panigation flex-column flex-center">
-				<button class="flex-row flex-center">
+				<button type="button" onclick="addButton_6()" class="flex-row flex-center">
 					<p>Add references</p>
 					<i class="fas fa-plus"></i>
 				</button>
@@ -433,5 +482,8 @@
 		</div>
 	</footer>
 	<!-- End of footer HTML -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  	<script type="text/javascript" src="js.js"></script>
 </body>
 </html>
