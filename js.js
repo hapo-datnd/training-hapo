@@ -74,33 +74,25 @@ function addButton() {
 	let b = countGraphic_0.length;
 	let numberOfPro_skill = a - b;
 
-	switch(numberOfPro_skill%3) {
-  case 0:
-		var newAdd = addSkill(myElement1,"pro-skill","skill-1",numberPro_skill_1-numberOfGraphic_0Skill1-1);
-    // code block
-    break;
-  case 1:
-		var newAdd = addSkill(myElement1,"pro-skill","skill-2",numberPro_skill_2-1);
-	// body...
-	
-    // code block
-    break;
-  case 2:
+	if (numberOfPro_skill%3===0) {
+		let newAdd = addSkill(myElement1,"pro-skill","skill-1",numberPro_skill_1-numberOfGraphic_0Skill1-1);
+	}
+
+	if (numberOfPro_skill%3===1) {
+		let newAdd = addSkill(myElement1,"pro-skill","skill-2",numberPro_skill_2-1);
+	}
+
+	if (numberOfPro_skill%3===2) {
 		if ((numberPro_skill_3%2)==1) {
-			var newAdd = addSkill(myElement2,"pro-skill","skill-2",numberPro_skill_2-1);
-			var newAdd = addSkill(myElement3,"pro-skill","skill-3",numberPro_skill_3-1);
+			let newAdd = addSkill(myElement2,"pro-skill","skill-2",numberPro_skill_2-1);
+			let newAdd1 = addSkill(myElement3,"pro-skill","skill-3",numberPro_skill_3-1);
 		} 
 
 		if ((numberPro_skill_3%2)==0) {
-			var newAdd = addSkill(myElement2,"pro-skill","skill-1",numberPro_skill_1-1);
-			var newAdd = addSkill(myElement3,"pro-skill","skill-3",numberPro_skill_3-1);
+			let newAdd = addSkill(myElement2,"pro-skill","skill-1",numberPro_skill_1-1);
+			let newAdd1 = addSkill(myElement3,"pro-skill","skill-3",numberPro_skill_3-1);
 		}
-		
-		// body...
-	
-    // code block
-    break;
-	}// body...
+	}
 }
 
 let myElement4 = `<div class="person-skill">
